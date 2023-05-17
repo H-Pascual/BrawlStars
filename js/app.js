@@ -27,12 +27,10 @@ funcionInit();
 
 //Filtrado de botones
 botonTodos.addEventListener("click", () => {
-    console.log(personajesOrdenados);
-    console.log(personajesOrdenados[0].id);
     personaje.innerHTML = "";
     for(let i=0;i<6;i++)
     {
-        AñadirPersonaje(personajesOrdenados[i].id, personajesOrdenados[i].nombre, personajesOrdenados[i].imagen);
+        AñadirPersonaje(personajes[i].id, personajes[i].nombre, personajes[i].imagen);
     }
     colorPersonaje();
     colorBoton();
